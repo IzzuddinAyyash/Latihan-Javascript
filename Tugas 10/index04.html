@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+</head>
+<body>
+    <h2>Penjumlahan</h2>
+    <input type="number" id="nilai1">
+    <h2>+</h2>
+    <input type="number" id="nilai2" onchange="jumlah()">
+    <h2>=</h2>
+    <input type="number" id="hasil">
+
+    <script>
+        let nilai1 = document.getElementById('nilai1')
+        let nilai2 = document.getElementById('nilai2')
+        let hasil = document.getElementById('hasil')
+        let penampung
+
+        function jumlah() {
+            penampung = parseInt(nilai1.value) + parseInt(nilai2.value)
+            hasil.value = penampung            
+            
+        }
+    </script>
+    
+</body>
+</html>
